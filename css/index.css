@@ -1,0 +1,1183 @@
+body{
+     font-family:'robotoregular', sans-serif;
+     font-size: 14px;
+     position: relative;
+     color: #545454;
+}
+ @font-face {
+     font-family: 'robotobold';
+     src: url('../fonts/roboto-bold.woff2') format('woff2'), url('../fonts/roboto-bold.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'robotoregular';
+     src: url('../fonts/roboto-regular.woff2') format('woff2'), url('../fonts/roboto-regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ *{
+     margin: 0px;
+     padding: 0px;
+}
+ *,:before,:after{
+     box-sizing: border-box;
+}
+ *,*:focus {
+     outline: none;
+}
+ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     margin: 0;
+}
+ ul{
+     list-style: none;
+}
+ img{
+     max-width: 100%;
+}
+ .goc-smooth{
+     transition: 0.5s;
+     -webkit-transition:0.5s;
+}
+ a{
+     text-decoration: none;
+     display: inline-block;
+     transition: 0.5s;
+}
+ ::-webkit-scrollbar {
+     width: 4px;
+     border-radius: 2px;
+     height: 15px;
+}
+ ::-webkit-scrollbar-track {
+     background: #f1f1f1;
+}
+ ::-webkit-scrollbar-thumb {
+     background: #888;
+}
+ .list-inline{
+     list-style-type: none;
+     font-size: 0px;
+     margin: 0px -12px;
+}
+ .list-inline >li{
+     display: inline-block;
+     font-size: 14px;
+     padding: 0px 12px;
+}
+ .go-visiable{
+     visibility: visible;
+     opacity: 1;
+}
+ .go-invisiable{
+     visibility: hidden;
+     opacity: 0;
+     transition: 0.5s;
+}
+ .container{
+     margin:0 auto;
+     position:relative 
+}
+ @media only screen and (max-width:992px){
+     .container{
+         padding:0 12px 
+    }
+}
+ @media(min-width:992px){
+     .container{
+         width:970px 
+    }
+}
+ @media only screen and (min-width:1200px){
+     .container{
+         width:1096px 
+    }
+}
+ header{
+     background-color: #473c92;
+     position: relative;
+}
+ .animatable {
+     visibility: hidden;
+}
+ .animated {
+     visibility: visible;
+     animation-fill-mode: both;
+     animation-duration: 0.5s;
+}
+ @keyframes fadeInDown {
+     0% {
+         opacity: 0;
+         transform: translateY(-60px);
+    }
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+    }
+}
+ @keyframes bounceInLeft {
+     0% {
+         opacity: 0;
+         transform: translateX(-100px);
+    }
+     100% {
+         opacity: 1;
+         transform: translateX(0);
+    }
+}
+ @keyframes bounceInRight {
+     0% {
+         opacity: 0;
+         transform: translateX(50px);
+    }
+     100% {
+         opacity: 1;
+         transform: translateX(0);
+    }
+}
+ .animated.bounceInRight {
+     animation-name: bounceInRight;
+}
+ .animated.bounceInLeft {
+     animation-name: bounceInLeft;
+}
+ .animated.fadeInDown {
+     animation-name: fadeInDown;
+}
+ .headCount{
+     position: relative;
+     font-size: 0px;
+     padding:12px 0px;
+}
+ .headCount > .go-logo ,.headCount > .go-leftnav ,.headCount > .go-rightnav{
+     display: inline-block;
+     font-size: 14px;
+     vertical-align: middle;
+     width: 40%;
+     transition: 
+}
+ .headCount > .go-logo{
+     width: 20%;
+}
+ .headCount > .go-logo >a >img{
+     max-width:120px;
+}
+ .headCount > .go-leftnav{
+     width: 50%;
+}
+ .headCount > .go-rightnav{
+     width: 30%;
+     text-align: right;
+}
+ .go-listitems{
+     margin:0px -24px;
+}
+ .go-listitems >li{
+     padding: 0px 24px;
+     position: relative;
+}
+ .go-listitems >li:after{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 3px;
+     background-color: #fff;
+     right: 0;
+     left: 0 margin:0px auto;
+     bottom: -20px;
+     visibility: hidden;
+     opacity: 0;
+     transition: 0.5s;
+}
+ .go-listitems >li:hover a {
+     opacity: 1;
+     color: #fff;
+     font-weight: bold;
+}
+ .go-listitems1 >li:hover a{
+     opacity: 1;
+     color: #fff;
+     font-weight: bold;
+}
+ .go-listitems > li:hover:after{
+     bottom: -14px;
+     visibility: visible;
+     opacity: 1;
+}
+ .go-listitems >li >a ,.go-listitems1 >li >a{
+     opacity: 0.5;
+     font-size: 14px;
+     line-height: 2.71;
+     letter-spacing: -0.1px;
+     color: #ffffff;
+}
+ section{
+     height: 680px;
+     background-color: #392d88;
+}
+ .go-fantsy-cont{
+     padding :86px 0px;
+     position: relative;
+}
+ .go-fantcy-leftcont{
+}
+ .go-fantcy-leftcont >p{
+     max-width: 585px;
+     font-size: 28px;
+     line-height: 1.32;
+     letter-spacing: 0px;
+     color: #ffffff;
+     margin-bottom: 42px;
+}
+ .go-fantcy-leftcont >p >b, .go-fantcy-leftcont >p >span{
+     display: block;
+     letter-spacing: 0.1px;
+}
+ .go-fantcy-leftcont > span , .go-prize-left >span{
+     border-radius: 20px;
+     box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.11);
+     background-color: #39cbe6;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 2.19;
+     padding: 10px 24px;
+     letter-spacing: -0.2px;
+     text-align: center;
+     margin-right: 24px;
+     color: #ffffff;
+     cursor:pointer;
+}
+ .go-fantcy-leftcont >a{
+     font-size: 12px;
+     letter-spacing: 0.4px;
+     text-align: center;
+     color: #ffffff;
+     text-decoration: underline;
+}
+ .go-fantasy-spons {
+     padding-top:24px;
+     margin:52px 0px;
+     border-top:2px solid #fff;
+     max-width: 683px;
+}
+ .go-cos-spons >span{
+     font-size: 12px;
+     letter-spacing: -0.1px;
+     color: #ffffff;
+}
+ .go-cos-spons >ul{
+     margin:20px auto 0px;
+}
+ .go-cos-spons >ul >li{
+     padding: 0px;
+     vertical-align: middle;
+}
+ .go-cos-spons >ul >li >img{
+     max-width: 78px;
+     max-height: 30px;
+}
+ .go-cos-spons >ul >li+li{
+     padding: 0px 20px;
+}
+ .go-spons-cont >li+li{
+     padding: 0px 30px;
+}
+ .go-fantcy-rightcont{
+     width: 436px;
+     height: 396px;
+     position: absolute;
+     right: 0;
+     top: 42px;
+}
+ .go-dreamteam {
+     position: absolute;
+     margin: -134px auto;
+}
+ .go-teamlist{
+     text-align: center;
+     padding: 50px 34px 24px;
+     border-radius: 10px;
+     margin: 0px auto;
+     box-shadow: 0 3px 6px 0 rgba(83, 112, 128, 0.29);
+     background-color: #251c62;
+}
+ .go-teamlist >li{
+     width: 33.33%;
+     position: relative;
+     padding-top: 24px;
+     padding-bottom: 24px;
+}
+ .go-dreamteam-cont >p{
+     opacity: 1;
+     font-size: 100px;
+     font-weight: 900;
+     line-height: 0.33;
+     letter-spacing: -0.2px;
+     color:#39cbe67d;
+     padding-bottom: 8px;
+}
+ .go-dreamteam-cont >p >b{
+     font-size: 18px;
+     font-weight: bold;
+     line-height: 1.83;
+     display: block;
+     opacity: 1;
+     letter-spacing: 0px;
+     text-align: center;
+     color: #39cbe6;
+}
+ .go-dreamteam-cont >span{
+     font-size: 14px;
+     line-height: 1.6;
+     letter-spacing: -0.2px;
+     text-align: center;
+     color: #ffffff;
+}
+ .go-sidenav{
+     border-right: solid 2px #ffffff75;
+}
+ .go-side-ptn >p{
+     top: 50%;
+     position: absolute;
+     width: 45px;
+     height: 45px;
+     background-color: #514798;
+     border-radius: 50%;
+     right: -23px;
+     margin: -24px auto;
+}
+ .go-side-ptn >p >svg{
+     margin:13px 0px;
+}
+ .go-glan-list >li{
+     width: 33%;
+     position: relative;
+     text-align: center;
+     vertical-align: top;
+     border-right: 1px solid #fff;
+     padding-top: 36px;
+}
+ .go-games-glan{
+     position: relative;
+     padding-top: 148px;
+     padding-bottom: 60px;
+     border-bottom: 1px solid #545454;
+}
+ .go-games-glan >h1 {
+     font-size: 20px;
+     position: relative;
+     font-weight: bold;
+     line-height: 1.65;
+     letter-spacing: 0px;
+     color: #392d88;
+     margin:0px auto 26px;
+}
+ .go-games-glan >h1:before{
+     content: '';
+     position: absolute;
+     width: 40px;
+     height: 3px;
+     background-color: #392d88;
+     bottom: 0;
+}
+ .go-ftc{
+     color: #0079ff!important;
+     text-decoration: underline;
+}
+ .go-teamcreation >a{
+     font-size: 16px;
+     font-weight: bold;
+     line-height: 1.44;
+     letter-spacing: -0.2px;
+     text-align: center;
+     color: #575757;
+     margin:12px auto;
+}
+ .go-teamcreation >p{
+     font-size: 14px;
+     line-height: 1.43;
+     letter-spacing: -0.2px;
+     text-align: center;
+     color: #575757;
+     margin: 0px auto 18px;
+}
+ .go-teamcreation >p >span{
+     padding-right: 18px;
+     font-size: 12px;
+     font-weight: bold;
+     letter-spacing: -0.1px;
+     color: #392d88;
+}
+ .go-teamcreation >p >span,.go-teamcreation >p >img{
+     vertical-align: middle;
+}
+ .go-hover-team{
+     border-radius: 10px;
+     box-shadow: 0 19px 64px 0 rgba(83, 112, 128, 0.28);
+     background-color: #ffffff;
+}
+ .go-hover-team:before{
+     width: 100%;
+     left: 0;
+     content: '';
+     position: absolute;
+     bottom: 0;
+     height: 6px;
+     border-radius: 0px 0px 10px 10px;
+     box-shadow: 0 19px 64px 0 rgba(83, 112, 128, 0.28);
+     background-color: #392d88;
+}
+ .go-athon:before{
+     content: "";
+     position: absolute;
+     height: 220px;
+     width: 2px;
+     background-color: #979797;
+     opacity: 0.5;
+     left: 0;
+}
+ .go-offer-prtnr{
+     padding:52px 0px;
+     border-bottom: 1px solid #545454;
+}
+ .go-offer-prtnr >h2{
+     font-size: 20px;
+     font-weight: bold;
+     line-height: 1.65;
+     letter-spacing: 0px;
+     color: #392d88;
+     position: relative;
+}
+ .go-offer-prtnr >h2:before{
+     content: '';
+     position: absolute;
+     width: 40px;
+     height: 3px;
+     background-color: #0079ff;
+     bottom: -6px;
+}
+ .go-try-left >h3{
+     font-size: 20px;
+     font-weight: bold;
+     position: relative;
+     line-height: 1.65;
+     letter-spacing: 0px;
+     color: #392d88;
+}
+ .go-try-left >h3:before{
+     content: '';
+     position: absolute;
+     width: 40px;
+     height: 3px;
+     background-color: #0079ff;
+     bottom: -6px;
+}
+ .go-try-left >p{
+     font-size: 14px;
+     line-height: 1.43;
+     letter-spacing: -0.2px;
+     color: #575757;
+     max-width: 200px;
+     padding-top: 36px;
+}
+ .go-must_try{
+     font-size: 0px;
+}
+ .go-try-left ,.go-try-right{
+     display: inline-block;
+     font-size: 14px;
+     width: 30%;
+     text-align: left;
+     vertical-align: top;
+}
+ .go-try-right{
+     width: 70%;
+}
+ .go-offer-prtnr >p{
+     margin: 36px auto 24px;
+}
+ .go-must-lists >li{
+     width: 33.33%;
+     border-radius: 10px;
+     cursor: pointer;
+     vertical-align: top;
+}
+ .go-try-logo >span {
+     display: block;
+     height: 120px;
+     max-width: 100%;
+     overflow: hidden;
+     max-height: 120px;
+     vertical-align: bottom;
+     transform: scale(1);
+     transition: 0.9s;
+}
+ .go-try-logo >span >img{
+     width: 100%;
+     transition: 0.9s;
+}
+ .go-try-cont{
+     padding: 24px;
+     border:1px solid #ccc;
+     border-radius: 0px 0px 10px 10px;
+}
+ .go-must-lists >li:hover .go-try-logo >span >img{
+     transform: scale(1.05);
+     transition: .9s;
+     overflow-x: hidden;
+}
+ .go-must-lists > li :hover a{
+     text-decoration: underline;
+}
+ .go-try-cont >a{
+     font-size: 14px;
+     line-height: 1.43;
+     letter-spacing: -0.2px;
+     color: #575757;
+     padding-top: 12px;
+}
+ .go-stats{
+     padding-top: 48px;
+     font-size: 0px;
+     position: relative;
+}
+ .live-stats , .go-deal-steal{
+     display: inline-block;
+     font-size: 14px;
+     width: 38%;
+     vertical-align: top;
+}
+ .go-deal-steal{
+     width: 62%;
+     border-left: 2px solid #5757574f;
+}
+ .live-stats >h3 ,.go-deal-steal >h3{
+     font-size: 20px;
+     font-weight: bold;
+     position: relative;
+     line-height: 1.65;
+     letter-spacing: 0px;
+     color: #392d88;
+}
+ .live-stats >h3:before ,.go-deal-steal >h3:before{
+     content: '';
+     position: absolute;
+     width: 40px;
+     height: 3px;
+     background-color: #0079ff;
+     bottom: -6px;
+}
+ .go-deal-steal{
+     padding-left: 48px;
+}
+ .live-stats >span{
+     display: block;
+     opacity: 0.5;
+     font-size: 70px;
+     font-weight: 900;
+     line-height: 0.47;
+     letter-spacing: -2.6px;
+     color: #c8c8ee;
+     margin: 48px auto 24px;
+}
+ .live-stats >h4{
+     font-size: 20px;
+     font-weight: bold;
+     line-height: 1.65;
+     letter-spacing: 0px;
+     color: #392d88;
+}
+ .live-stats >p{
+     font-size: 14px;
+     line-height: 1.43;
+     letter-spacing: -0.2px;
+     color: #575757;
+}
+ .go-deal-cont{
+     font-size: 0px;
+     padding-top:48px;
+}
+ .go-deal-cont >span ,.go-cont-dx{
+     display: inline-block;
+     font-size: 14px;
+     width: 35%;
+     vertical-align: middle;
+     cursor: pointer;
+}
+ .go-cont-dx{
+     padding-left: 24px;
+     width: 65%;
+}
+ .go-cont-dx >h5{
+     font-size: 16px;
+     line-height: 1.44;
+     letter-spacing: -0.2px;
+     color:#545454;
+     padding-bottom:12px;
+     max-width: 336px;
+    cursor: pointer;
+}
+ .go-deal-cont:hover .go-cont-dx >h5{
+     text-decoration: underline;
+     color: #0079ff;
+}
+ .go-co{
+     padding-bottom: 24px;
+}
+ .go-prizes{
+     background-image: url(../images/background-c.png);
+     max-width: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+ .go-prize-cont{
+     font-size: 0px;
+}
+ .go-prize-left , .go-prize-right{
+     display: inline-block;
+     font-size: 14px;
+     width: 50%;
+     vertical-align: top;
+}
+ .go-prize-left{
+     padding-top: 150px;
+}
+ .go-prize-right{
+     padding-top: 28px;
+}
+ .go-prize-left >h5{
+     font-size: 20px;
+     font-weight: bold;
+     line-height: 1.65;
+     letter-spacing: 0px;
+     color: #ffffff;
+     position: relative;
+}
+ .go-prize-left >h5:before{
+     content: '';
+     position: absolute;
+     width: 40px;
+     height: 3px;
+     background-color: #ffffff;
+     bottom: -6px;
+}
+ .go-prize-left > p{
+     font-size: 14px;
+     line-height: 1.43;
+     letter-spacing: -0.2px;
+     color: #ffffff;
+     max-width: 440px;
+     margin:26px 0px 84px;
+}
+ .go-prize-left >span{
+     background-color: #0079ff;
+}
+ .go-prize-right >span >img{
+     max-width: 480px;
+     max-height: 226px;
+}
+ .go-daily{
+     font-size: 0px;
+     padding:38px 0px 72px;
+     border-bottom: solid 1px #ffffff94;
+}
+ .go-purple ,.go-events{
+     display: inline-block;
+     font-size: 4px;
+     width: 50%;
+     padding:0px 8px;
+}
+ .go-purple-cont1{
+     background-color: #ffffff;
+     font-size: 0px;
+     padding: 24px 6px 24px 24px;
+     border-radius: 10px;
+}
+ .go-purple-cont1 >span ,.go-pur-cont{
+     display: inline-block;
+     font-size: 14px;
+     width: 30%;
+     vertical-align: middle;
+}
+ .go-pur-cont{
+     width: 70%;
+     padding-left: 16px;
+}
+ .go-pur-cont >p{
+     font-size: 16px;
+     line-height: 1.25;
+     letter-spacing: -0.2px;
+     color: #575757;
+     padding:12px 0px;
+     border-bottom: 1px solid #97979787;
+}
+ .go-pur-cont >p >b{
+     display: block;
+}
+ .go-pur-cont >a{
+     font-size: 16px;
+     line-height: 1.25;
+     letter-spacing: -0.2px;
+     color: #377bfb;
+     padding-top: 14px;
+}
+ .go-purple-cont1:hover .go-pur-cont >a{
+     text-decoration: underline;
+}
+ footer{
+     background-color: #392D88;
+}
+ .footer-cont{
+     padding-top: 84px;
+}
+ .footer-cont >h5{
+     font-size: 42px;
+     font-weight: bold;
+     line-height: 0.48;
+     letter-spacing: -0.6px;
+     text-align: center;
+     color: #fff;
+}
+ .footer-cont >p{
+     font-size: 24px;
+     line-height: 1.9;
+     letter-spacing: -0.3px;
+     text-align: center;
+     color: #fff;
+     padding-top: 12px;
+}
+ .goc-grabon-carn{
+     font-size: 0px;
+     padding-top: 96px;
+     padding-bottom: 48px;
+     border-bottom: 2px solid #ffffff85;
+}
+ .grab-cont ,.grab-img{
+     display: inline-block;
+     font-size: 14px;
+     vertical-align: top;
+}
+ .grab-img{
+     display: inline-block;
+     font-size: 14px;
+     width: 40%;
+}
+ .grab-img > a >img{
+     vertical-align: middle;
+     padding-right: 6px;
+     max-width: 152px;
+}
+ .grab-img >h3{
+     font-size: 14px;
+     line-height: 1.43;
+     letter-spacing: -0.1px;
+     color: #fff;
+     font-weight: 500;
+     padding: 12px 12px 21px 0px;
+     max-width: 290px;
+}
+ .goc-playstore >a+a{
+     padding:0px 6px;
+}
+ .grab-cont {
+     width: 60%;
+}
+ .grab-cont >ul{
+     font-size: 0px;
+}
+ .grab-cont>ul >li{
+     display: inline-block;
+     font-size: 14px;
+     width: 33.33%;
+     vertical-align: top;
+}
+ .goc-fo-con{
+     padding: 0px 24px;
+}
+ .goc-fo-con1{
+     padding:0px 24px;
+}
+ .goc-pdin{
+     padding:0px!important;
+}
+ .goc-fo-con >b ,.goc-fo-con1 >b{
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 1.25;
+     letter-spacing: -0.2px;
+     color: #fff;
+     padding-bottom: 12px;
+}
+ .goc-fo-con >ul >li >a ,.goc-fo-con1 >ul >li >a{
+     font-size: 14px;
+     line-height: 1.43;
+     letter-spacing: -0.3px;
+     color: #fff;
+     opacity: 0.8;
+     padding-top: 6px;
+}
+ .goc-fo-con >ul >li >a:hover ,.goc-fo-con1 >ul >li >a:hover{
+     text-decoration: underline;
+}
+ .goc-fo-con1 >ul, .goc-fo-con >ul{
+     padding-top:16px ;
+}
+ .goc-snn{
+     margin-top: 18px!important;
+     opacity: 1!important;
+}
+ .pop-santa >.pop-santaimg >img{
+     max-width: 175px;
+}
+ .goc-snn>i{
+     margin-right: 12px;
+}
+ .footer-stores {
+     padding-top: 48px;
+     padding-bottom: 48px;
+     border-bottom: 2px solid #57575759;
+}
+ .footer-stores >ul{
+     font-size: 0px;
+}
+ .footer-stores >ul >li{
+     display: inline-block;
+     font-size: 14px;
+     width: 20%;
+     vertical-align: top;
+}
+ .footer-end{
+     background-color: #fff;
+}
+ .footer-end >.container >p{
+     padding:24px 0px;
+     opacity: 0.5;
+     font-size: 14px;
+     line-height: 1.43;
+     letter-spacing: -0.3px;
+     text-align: center;
+     color: #575757;
+    ;
+}
+ .hamper {
+     display: none;
+}
+ .goc-cross{
+     display: none;
+}
+ #overlay {
+     position: absolute;
+     top: -70px;
+     bottom: 0;
+     background: rgba(0, 47, 111, 0.8);
+     width: 100%;
+     height: 100%;
+     opacity: 0.87;
+     display: none;
+     transition: all 1s ease;
+}
+ #overlay{
+     z-index: 1111;
+}
+ .open{
+     display: block!important;
+}
+ .scroll-open {
+     bottom: 30px!important;
+     opacity: 1!important;
+}
+ .scrollbar {
+     width: 40px;
+     height: 40px;
+     background-color: #000000cc;
+     position: fixed;
+     right: 10px;
+     bottom:0px;
+     opacity: 0;
+     cursor: pointer;
+     z-index: 999999999;
+     transition: 0.5s;
+}
+ .scrollbar:after {
+     content: '';
+     position: absolute;
+     top: 50%;
+     padding: 7px;
+     border: solid white;
+     margin: -4px 13px;
+     transform: rotate(45deg);
+     border-width: 1px 0px 0px 1px;
+}
+ @media only screen and (max-width: 767px){
+     .goc-cross{
+         display:block;
+         position: absolute;
+         top: 12px;
+         right: 35px;
+         cursor: pointer;
+         z-index: 11;
+    }
+     .goc-navmenu >a >svg{
+         cursor: pointer;
+    }
+     .grab-img{
+         display: block;
+         width: 100%;
+         text-align: center;
+    }
+     .grab-img >h3{
+         display: none;
+    }
+     .grab-img >a>svg{
+         display: none;
+    }
+     .goc-grabon-carn{
+         padding-top: 0px;
+    }
+     .grab-cont{
+         width: 100%;
+         padding-top: 24px;
+    }
+     .grab-cont>ul >li{
+         width: 50%;
+    }
+     .grab-img >a{
+         display: none;
+    }
+     .con{
+         display: none!important;
+    }
+     .footer-cont >p{
+         padding-top:14px;
+         font-size: 16px;
+    }
+     .footer-cont >h5{
+         font-size: 28px;
+    }
+     .goc-playstore >a >img{
+         max-width: 80px;
+    }
+     .footer-cont{
+         padding-top: 24px;
+    }
+     .footer-stores >ul >li{
+         width: 50%;
+         margin: 12px auto;
+    }
+     .goc-pdin{
+         padding: 0px 24px!important;
+    }
+     .sss{
+         display: none;
+    }
+     .goc-savegrab >h5{
+         font-size: 24px;
+    }
+     .goc-ply, .gc-lgin{
+         width: 100%;
+         display: block;
+    }
+     .go-purple, .go-events{
+         width: 100%;
+         margin:12px auto;
+    }
+     .go-prize-left, .go-prize-right{
+         width: 100%;
+         text-align: center;
+    }
+     .go-prizes {
+         background-image: none;
+         max-width: 100%;
+         background-color: #392D88;
+    }
+     .go-prize-left{
+         padding-top: 36px;
+    }
+     .live-stats, .go-deal-steal{
+         width: 100%;
+    }
+     .go-deal-steal{
+         border:none;
+    }
+     .go-deal-steal{
+         padding: 18px 0px;
+    }
+     .go-deal-cont{
+         padding-top: 24px;
+    }
+     .live-stats >h3, .go-deal-steal >h3{
+         text-align: left;
+    }
+     .live-stats{
+         text-align: center;
+    }
+     .go-try-left, .go-try-right{
+         width: 100%;
+         text-align: center;
+    }
+     .go-try-left >p{
+         max-width: 100%;
+    }
+     .go-must-lists >li{
+         width: 100%;
+         margin: 16px auto;
+    }
+     .go-try-cont >a{
+         display: block;
+    }
+     .go-try-logo >span{
+         height: 180px;
+         max-height: 180px;
+    }
+     .go-glan-list >li{
+         width: 100%;
+         margin: 12px auto;
+    }
+     .go-games-glan{
+         padding-top: 24px;
+    }
+     .go-dreamteam{
+         position: relative;
+         margin: 0px;
+         border-radius: none;
+    }
+     .go-teamlist >li{
+         width: 100%;
+         display: block;
+    }
+     .go-side-ptn{
+         display: none;
+    }
+     .go-sidenav{
+         border: none;
+    }
+     .go-teamlist >li{
+         padding-bottom: 55px;
+    }
+     .go-teamlist{
+         border-radius: 0px;
+    }
+     .go-prize-right >span >img{
+         max-width: 330px;
+    }
+     section{
+         height: 100%;
+    }
+     .go-fantcy-rightcont {
+         width: 100%;
+         height:100%;
+         position: relative;
+         right: 0;
+         text-align: center;
+         top: 0px;
+    }
+     .go-fantcy-leftcont >p{
+         font-size: 24px;
+    }
+     .list-inline >li{
+         margin:12px auto;
+         text-align: center;
+    }
+     .go-spons-cont >li+li{
+         padding: 0px 6px;
+    }
+     .go-fantsy-cont{
+         padding: 24px 0px;
+    }
+     .go-fantasy-spons{
+         margin: 24px 0px;
+    }
+     .hamper {
+         width: 20%;
+         display: inline-block;
+         vertical-align: middle;
+    }
+     .go-menu {
+         position: absolute;
+         top: 50%;
+         width: 32px;
+         height: 18px;
+         margin: -14px auto 0;
+         left: 20px;
+         z-index: 12;
+         display: block;
+         padding: 0;
+         cursor: pointer;
+         border: 0;
+         background-color: transparent!important;
+    }
+     .go-menu>span {
+         width: 100%;
+         height: 3.4px;
+         position: absolute;
+         border-radius: 0;
+         color: #fff;
+         top: 0;
+         left: 0;
+         margin: 0 auto;
+         background-color: #fff!important;
+    }
+     .go-menu>.b {
+         top: 7px;
+         width: 75%;
+    }
+     .go-menu>.c {
+         top: 14px;
+         width: 45%;
+    }
+     .headCount > .go-leftnav{
+         position: fixed;
+         left: -250px;
+         background: #fff;
+         z-index: 111111;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         max-width: 250px;
+         padding: 0px;
+         visibility: hidden;
+         opacity: 0;
+         transition: 0.5s;
+    }
+     .headCount > .go-logo{
+         width: 50%;
+    }
+     .headCount > .go-rightnav{
+         display: none;
+    }
+     .active{
+         visibility: visible!important;
+         opacity: 1!important;
+         transition: 0.5s;
+         left:0px!important;
+    }
+     .go-listitems >li{
+         display: block;
+         font-size: 14px;
+         color: #545454;
+    }
+     .go-listitems >li:after{
+         display: none;
+    }
+     .go-listitems >li >a{
+         color: #545454;
+         opacity: 1;
+         font-weight: bold;
+    }
+     .go-listitems >li:hover a{
+         color: #545454 
+    }
+     .go-listitems{
+         margin: 0px;
+    }
+     .go-listitems >li{
+         margin: 0px;
+         border-bottom: 1px solid #545454;
+         text-align: left;
+    }
+     .animated{
+         visibility: visible;
+    }
